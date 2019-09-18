@@ -1,15 +1,14 @@
 .Item {
     border: 2px solid cornflowerblue;
-    margin: 10px;
+    width: 90%;
     padding: 10px;
-    float: left;
+    margin: 5px;
 }
 
 .ItemList {
     border: 1px solid black;
-    display: inline-block;
-    float: left;
     padding-top: 80px;
+    width: 100%;
 }
 
 .Nav {
@@ -23,13 +22,24 @@
 
 .Nav a {
     float: left;
-    color: lightgray;
+    color: white;
     padding: 25px 25px;
     text-decoration: none;
+    border: 1px solid black;
 }
 
 .Nav a:hover {
     background-color: lightgray;
-    color: #282c34;
+    color: black;
+    text-decoration: none;
 }
 
+.ActiveLink {
+    color: black;
+    background-color: lightgray;
+    text-decoration: none;
+}
+
+.About {
+    padding-top: 80px;
+}
