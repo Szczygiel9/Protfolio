@@ -1,17 +1,22 @@
-.Item {
+body {
+    background-color: lightgrey;
+    font-family: "Times New Roman";
+}
+
+.item {
     border: 2px solid cornflowerblue;
     width: 90%;
     padding: 10px;
     margin: 5px;
 }
 
-.ItemList {
+.item-list {
     border: 1px solid black;
     padding-top: 80px;
     width: 100%;
 }
 
-.Nav {
+.nav {
     overflow: hidden;
     background-color: #282c34;
     position: fixed;
@@ -20,7 +25,7 @@
     max-height: 80px;
 }
 
-.Nav a {
+.nav a {
     float: left;
     color: white;
     padding: 25px 25px;
@@ -28,18 +33,127 @@
     border: 1px solid black;
 }
 
-.Nav a:hover {
+.nav a:hover {
     background-color: lightgray;
     color: black;
     text-decoration: none;
 }
 
-.ActiveLink {
+.active-link {
     color: black;
     background-color: lightgray;
     text-decoration: none;
 }
 
-.About {
+.about {
     padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.timeline {
+    position: relative;
+    max-width: 40%;
+    margin: 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 31px;
+    margin-left: -3px;
+}
+
+.timeline-container {
+    padding-left: 70px;
+    padding-right: 25px;
+    position: relative;
+    background-color: inherit;
+    width: 100%;
+}
+
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.right-timeline-item {
+    left: 50%;
+}
+
+.right-timeline-item::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid green;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent green transparent transparent;
+}
+
+.right-timeline-item::after {
+    left: -16px;
+}
+
+.timeline-item-content {
+    padding: 20px 30px;
+    background-color: green;
+    position: relative;
+    border-radius: 6px;
+    left: 0%;
+}
+
+.section {
+    width: 90%;
+    margin: auto;
+}
+
+.section-title {
+    padding-left: 20px;
+    border-bottom: 1px solid black;
+}
+
+.experience-position {
+    margin-bottom: 0;
+}
+
+.experience-date {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-family: Cambria;
+    font-size: medium;
+    padding-left: 15px;
+}
+
+.experience-list {
+    margin-top: 0;
+}
+
+.sidebar {
+    width: 20%;
+    border-right: 1px solid black;
+    padding-left: 10px;
+}
+
+.main-content {
+    width: 80%;
 }

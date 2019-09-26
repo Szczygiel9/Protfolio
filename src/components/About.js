@@ -1,9 +1,12 @@
 import React from 'react';
+import Sidebar from "./Sidebar";
+import MainContent from "./MainContent";
 
 const About = () => {
     return (
-        <div className='About'>
-            <h2>Strona o mnie</h2>
+        <div className='about'>
+            <Sidebar/>
+            <MainContent/>
         </div>
     );
 };

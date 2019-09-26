@@ -3,7 +3,7 @@ import Item from "./Item";
 
 const ItemList = ({projects}) => {
     return (
-        <div className='ItemList'>
+        <div className='item-list'>
             {
                 projects.map(
                     function (project) {
