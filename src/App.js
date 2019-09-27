@@ -8,11 +8,11 @@ import projects from "./data/SampleProjects";
 
 function App() {
     return (
-        < Router>
+        <Router>
             <div className="App">
                 <Header/>
-                <Route exact path="/" component={About}/>
-                <Route path="/projects" component={() => <ItemList projects={projects}/>}/>
+                <Route exact path={process.env.PUBLIC_URL} component={About}/>
+                <Route path={process.env.PUBLIC_URL + "/projects"} component={() => <ItemList projects={projects}/>}/>
             </div>
         </Router>
     );
