@@ -1,7 +1,7 @@
 const assecoExp = {
     dateFrom: "Maj 2018",
     dateTo: "Sierpień 2019",
-    position: "Praktykant",
+    position: "Praktykant - Asseco Business Solutions",
     descriptionPoints: [
         "Tworzenie modelu dedykowanego do komunikacji typu REST",
         "Tworzenie zaawansowanych serwisów typu REST",
@@ -10,13 +10,12 @@ const assecoExp = {
         "Swagger - konfiguracja i użycie biblioteki dokumentującej serwisy typu REST",
         "Tworzenie testów jednostkowych wraz z weryfikacją przetwarzania równoległego"
     ],
-    file: "/asseco.jpg"
 };
 
 const sollersExp = {
     dateFrom: "Listopad 2019",
     dateTo: "Obecnie",
-    position: "Developer",
+    position: "Developer - Sollers Consulting",
     descriptionPoints: ["Sample desc...", "Sample desc...", "Sample desc..."]
 };
 
