@@ -11,11 +11,10 @@ function App() {
         <Router>
             <div className="App">
                 <Header/>
-                <Route exact path={process.env.PUBLIC_URL} component={About}/>
+                <Route exact path={process.env.PUBLIC_URL + "/"} component={About}/>
                 <Route path={process.env.PUBLIC_URL + "/projects"} component={() => <ItemList projects={projects}/>}/>
             </div>
         </Router>
     );
 }
-
 export default App;

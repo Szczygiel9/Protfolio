@@ -157,3 +157,11 @@ body {
 .main-content {
     width: 80%;
 }
+
+.language-switcher {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    color: white;
+    float: right;
+}

@@ -6,6 +6,7 @@ const Header = () => {
         <div className='nav'>
             <NavLink exact activeClassName='ActiveLink' to="/">O mnie</NavLink>
             <NavLink activeClassName='ActiveLink' to="/projects">Repozytoria warte wspomnienia</NavLink>
+            <button className='language-switcher'>PL | EN</button>
         </div>
     );
 };
