@@ -11,10 +11,14 @@ function App() {
         <Router>
             <div className="App">
                 <Header/>
-                <Route exact path={process.env.PUBLIC_URL + "/"} component={About}/>
-                <Route path={process.env.PUBLIC_URL + "/projects"} component={() => <ItemList projects={projects}/>}/>
+                <div className='main-container'>
+                    <Route exact path={process.env.PUBLIC_URL + "/"} component={About}/>
+                    <Route path={process.env.PUBLIC_URL + "/projects"}
+                           component={() => <ItemList projects={projects}/>}/>
+                </div>
             </div>
         </Router>
     );
 }
+
 export default App;
