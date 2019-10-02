@@ -120,11 +120,14 @@ body {
     }
 
     .nav {
-        height: 160px;
+        height: 105px;
+        border-bottom: solid 1px black;
     }
 
     .nav a {
         width: 100%;
+        font-size: small;
+        padding: 12px 12px;
     }
 
     .image {
@@ -132,12 +135,18 @@ body {
     }
 
     .main-container {
-        padding-top: 165px;
+        padding-top: 110px;
     }
 
     .sidebar {
         width: 100%;
         border-right: none;
+        padding-right: 10px;
+    }
+
+    .main-content {
+        margin: auto;
+        width: 100%;
     }
 
 }
