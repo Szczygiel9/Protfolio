@@ -9,16 +9,23 @@ const assecoExp = {
         "Spring - użycie biblioteki na potrzeby tworzenia serwiów dziedzinowych oraz typu REST",
         "Swagger - konfiguracja i użycie biblioteki dokumentującej serwisy typu REST",
         "Tworzenie testów jednostkowych wraz z weryfikacją przetwarzania równoległego"
-    ],
+    ]
 };
 
 const sollersExp = {
     dateFrom: "Listopad 2019",
     dateTo: "Obecnie",
     position: "Developer - Sollers Consulting",
-    descriptionPoints: ["Sample desc...", "Sample desc...", "Sample desc..."]
+    descriptionPoints: [
+        "Praca w metodyce Scrum",
+        "Czynny udział w procesie code review",
+        "Implementacja wymagań biznesowych w technologii Guidewire",
+        "Aktywne uczestnictwo w ceremoniach Agile prowadzonych w języku angielskim",
+        "Implementacja usług serwisowych typu SOAP",
+        "Tworzenie dokumentacji technicznej"
+    ]
 };
 
-const ExperienceItems = [assecoExp, sollersExp];
+const ExperienceItems = [sollersExp, assecoExp];
 
 export default ExperienceItems;
