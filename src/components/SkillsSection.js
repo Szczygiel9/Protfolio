@@ -3,9 +3,9 @@ import React from 'react';
 const SkillsSection = ({title, content}) => {
     return (
         <div className='section'>
-            <h1 className='section-title'>{title}</h1>
+            <p className='section-title'>{title}</p>
             <div>
-                <ul>
+                <ul className='experience-list'>
                     {
                         content.map((item) => {
                                 return <li>{item}</li>
