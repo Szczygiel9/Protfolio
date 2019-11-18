@@ -1,6 +1,11 @@
 body {
-    background-color: lightgrey;
     font-family: "Times New Roman";
+    height: 100%;
+}
+
+.App {
+    background: linear-gradient(to bottom right, whitesmoke, gray);
+    padding-bottom: 30px;
 }
 
 .item {
@@ -28,6 +33,7 @@ body {
 
 .main-container {
     padding-top: 72px;
+    max-width: 1000px;
 }
 
 .nav a {
@@ -45,7 +51,6 @@ body {
 }
 
 .active-link {
-    color: black;
     background-color: lightgray;
     text-decoration: none;
 }
@@ -65,30 +70,45 @@ body {
 }
 
 .section-title {
+    font-size: 22px;
+    font-family: "Adobe Myungjo Std M";
     padding-left: 20px;
     border-bottom: 1px solid black;
 }
 
 .experience-position {
+    font-size: 20px;
+    font-family: "Adobe Caslon Pro";
     margin-bottom: 0;
+    padding-left: 15px;
 }
 
 .experience-date {
     margin-top: 0;
     margin-bottom: 5px;
-    font-family: Cambria;
+    font-family: "Adobe Caslon Pro";
     font-size: medium;
     padding-left: 15px;
 }
 
 .experience-list {
     margin-top: 0;
+    padding-left: 10px;
 }
 
 .sidebar {
     width: 20%;
+    min-width: 250px;
     border-right: 1px solid black;
     padding-left: 10px;
+}
+
+.sidebar-content {
+    font-family: "Adobe Caslon Pro";
+    line-height: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+    text-align: left;
 }
 
 .main-content {
@@ -108,10 +128,52 @@ body {
     border-radius: 10px;
     margin: auto;
     width: 90%;
+    padding-top: 7px;
 }
 
 .table {
     text-decoration: none;
+}
+
+.link:visited {
+    color: black;
+}
+
+.link:hover {
+    color: grey;
+}
+
+.summary {
+    text-indent: 20px;
+    font-size: 20px;
+    font-family: "Microsoft YaHei Light";
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding-left: 16px;
+}
+
+li:before {
+    content: "-";
+    padding-right: 8px;
+}
+
+.under-lined {
+    padding-top: 15px;
+    width: 110px;
+    border-bottom: 1px solid black;
+}
+
+.sidebar-section {
+    padding-top: 5px;
+    line-height: 21px;
+    font-family: "Adobe Garamond Pro";
 }
 
 @media screen and (max-width: 700px) {
