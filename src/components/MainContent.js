@@ -1,6 +1,7 @@
 import React from 'react';
 import ExperienceSection from "./ExperienceSection";
 import ExperienceItems from "../data/ExperienceItems";
+import Skills from "../data/Skills";
 import SkillsSection from "./SkillsSection";
 import Description from "./Description";
 
@@ -13,7 +14,10 @@ const MainContent = () => {
                 content={ExperienceItems}/>
             <SkillsSection
                 title={"Umiejętności"}
-                content={["Lorep ipsum", "Lorep ipsum", "Lorep ipsum"]}/>
+                content={Skills}/>
+            <SkillsSection
+                title={"Wykształcenie"}
+                content={["2015-2019 Politechnika Lubelska, kierunek informatyka"]}/>
         </div>
     );
 };
