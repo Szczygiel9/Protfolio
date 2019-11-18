@@ -1,31 +1,32 @@
 import React from 'react';
+import SidebarData from "../data/SidebarData";
 
 const Sidebar = () => {
     return (
         <div className='sidebar'>
             <div className='image'></div>
             <div className='sidebar-content'>
-                <div className='under-lined'>Dane osobowe</div>
+                <div className='under-lined'>{SidebarData.personalData.title}</div>
                 <div className='sidebar-section'>
-                    <div>Daniel Szczygielski</div>
-                    <div>szczygielski.daniel38@gmail.com</div>
+                    <div>{SidebarData.personalData.name}</div>
+                    <div>{SidebarData.personalData.email}</div>
                 </div>
 
                 <div className='under-lined'>Media</div>
                 <div className='sidebar-section'>
                     <div>
-                        LinkedIn: <a className='link'
-                                    href="https://www.linkedin.com/in/daniel-szczygielski-50b8a4154/">Profil</a>
+                        {SidebarData.mediaData.linkedin.fieldName}
+                        <a className='link'
+                           href={SidebarData.mediaData.linkedin.link}>{SidebarData.mediaData.linkedin.displayValue}</a>
                     </div>
                     <div>
-                        GitHub: <a className='link' href="https://github.com/Szczygiel9">szczygiel9</a>
+                        {SidebarData.mediaData.github.fieldName} <a className='link'
+                                                                    href={SidebarData.mediaData.github.link}>{SidebarData.mediaData.github.displayValue}</a>
                     </div>
                 </div>
 
-                <div className='under-lined'>Język</div>
-                <div className='sidebar-section'>
-                    Angielski w stopniu umożliwiającym płynną komunikacje z członkami zespołu
-                </div>
+                <div className='under-lined'>{SidebarData.langData.title}</div>
+                <div className='sidebar-section'>{SidebarData.langData.value}</div>
             </div>
         </div>
     );
