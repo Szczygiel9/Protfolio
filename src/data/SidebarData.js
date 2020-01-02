@@ -25,7 +25,7 @@ const mediaData = {
 const langData = {
     title: "Język",
     value: "Angielski w stopniu umożliwiającym płynną komunikacje z członkami zespołu"
-}
+};
 
 const SidebarData = {
     personalData: personalData,

@@ -17,7 +17,7 @@ const MainContent = () => {
                 content={Skills}/>
             <SkillsSection
                 title={"Wykształcenie"}
-                content={["2015-2019 Politechnika Lubelska, kierunek informatyka"]}/>
+                content={["2015-2019 Politechnika Lubelska, informatyka, tytuł: inżynier"]}/>
         </div>
     );
 };
