@@ -1,13 +1,25 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
+import {connect} from "react-redux";
+import {changeLanguage} from "../actions/dataActions";
 
-const Header = () => {
+const Header = props => {
     return (
         <div className='nav'>
             <NavLink exact activeClassName='active-link' to="/">O mnie</NavLink>
             <NavLink activeClassName='active-link' to="/projects">Projekty warte wspomnienia</NavLink>
-            <button className='language-switcher'>PL | EN</button>
+            <button onClick={() => {
+                props.changeLanguage();
+            }} className='language-switcher'>PL | EN
+            </button>
         </div>
     );
 };
-export default Header;
+
+const mapDispatchToProps = dispatch => {
+    return {
+        changeLanguage: () => dispatch(changeLanguage())
+    };
+};
+
+export default connect(null, mapDispatchToProps)(Header);
