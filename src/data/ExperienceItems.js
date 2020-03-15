@@ -1,6 +1,6 @@
 const assecoExp = {
     dateFrom: "Maj 2018",
-    dateTo: "Sierpień 2019",
+    dateTo: "Sierpień 2018",
     position: "Praktykant - Asseco Business Solutions",
     descriptionPoints: [
         "Tworzenie modelu dedykowanego do komunikacji typu REST",
@@ -13,7 +13,7 @@ const assecoExp = {
 };
 
 const sollersExp = {
-    dateFrom: "Listopad 2019",
+    dateFrom: "Listopad 2018",
     dateTo: "Obecnie",
     position: "Developer - Sollers Consulting",
     descriptionPoints: [
