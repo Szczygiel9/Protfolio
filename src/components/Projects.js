@@ -1,7 +1,7 @@
 import React from 'react';
 import aws from '../resources/aws.jpg'
 
-const ItemList = ({projects}) => {
+const Projects = () => {
     return (
         <div className='item-list'>
 
@@ -89,4 +89,4 @@ const ItemList = ({projects}) => {
         </div>
     );
 };
-export default ItemList;
+export default Projects;

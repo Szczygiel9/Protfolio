@@ -1,14 +1,26 @@
 import {LANG_CHANGE} from "../actions/constants";
+import {engData, plData} from "../data/dataObjects";
 
-const initialState = {
-    x: "abc"
-};
+const initialState = plData;
 
 function dataReducer(state = initialState, action) {
     if (action.type === LANG_CHANGE) {
-        return Object.assign({}, state, {x: state.x.concat("x")});
+        const lang = state.currentLang === "pl" ? "eng" : "pl";
+        return getDataObject(lang);
     }
     return state;
 }
+
+const getDataObject = (lang) => {
+    console.log(lang);
+    switch (lang) {
+        case "pl":
+            return plData;
+        case "eng":
+            return engData;
+        default:
+            return null;
+    }
+};
 
 export default dataReducer;

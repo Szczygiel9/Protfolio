@@ -1,34 +1,41 @@
 import React from 'react';
-import SidebarData from "../data/SidebarData";
+import {connect} from "react-redux";
 
-const Sidebar = () => {
+const Sidebar = props => {
     return (
         <div className='sidebar'>
             <div className='image'></div>
             <div className='sidebar-content'>
-                <div className='under-lined'>{SidebarData.personalData.title}</div>
+                <div className='under-lined'>{props.sidebarData.personalData.title}</div>
                 <div className='sidebar-section'>
-                    <div>{SidebarData.personalData.name}</div>
-                    <div>{SidebarData.personalData.email}</div>
+                    <div>{props.sidebarData.personalData.name}</div>
+                    <div>{props.sidebarData.personalData.email}</div>
                 </div>
 
                 <div className='under-lined'>Media</div>
                 <div className='sidebar-section'>
                     <div>
-                        {SidebarData.mediaData.linkedin.fieldName}
+                        {props.sidebarData.mediaData.linkedin.fieldName}
                         <a className='link'
-                           href={SidebarData.mediaData.linkedin.link}>{SidebarData.mediaData.linkedin.displayValue}</a>
+                           href={props.sidebarData.mediaData.linkedin.link}>{props.sidebarData.mediaData.linkedin.displayValue}</a>
                     </div>
                     <div>
-                        {SidebarData.mediaData.github.fieldName} <a className='link'
-                                                                    href={SidebarData.mediaData.github.link}>{SidebarData.mediaData.github.displayValue}</a>
+                        {props.sidebarData.mediaData.github.fieldName} <a className='link'
+                                                                          href={props.sidebarData.mediaData.github.link}>{props.sidebarData.mediaData.github.displayValue}</a>
                     </div>
                 </div>
 
-                <div className='under-lined'>{SidebarData.langData.title}</div>
-                <div className='sidebar-section'>{SidebarData.langData.value}</div>
+                <div className='under-lined'>{props.sidebarData.langData.title}</div>
+                <div className='sidebar-section'>{props.sidebarData.langData.value}</div>
             </div>
         </div>
     );
 };
-export default Sidebar;
+
+const mapStateToProps = state => {
+    return {
+        sidebarData: state.sidebarData
+    };
+};
+
+export default connect(mapStateToProps)(Sidebar);

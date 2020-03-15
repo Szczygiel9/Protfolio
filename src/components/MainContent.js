@@ -1,24 +1,35 @@
 import React from 'react';
 import ExperienceSection from "./ExperienceSection";
-import ExperienceItems from "../data/ExperienceItems";
-import Skills from "../data/Skills";
 import SkillsSection from "./SkillsSection";
 import Description from "./Description";
+import {connect} from "react-redux";
 
-const MainContent = () => {
+const MainContent = props => {
     return (
         <div className='main-content'>
             <Description/>
             <ExperienceSection
-                title={"Doświadczenie zawodowe"}
-                content={ExperienceItems}/>
+                title={props.experienceTitle}
+                content={props.experienceItems}/>
             <SkillsSection
-                title={"Umiejętności"}
-                content={Skills}/>
+                title={props.skillsTitle}
+                content={props.skillsContent}/>
             <SkillsSection
-                title={"Wykształcenie"}
-                content={["2015-2019 Politechnika Lubelska, informatyka, tytuł: inżynier"]}/>
+                title={props.educationTitle}
+                content={props.educationContent}/>
         </div>
     );
 };
-export default MainContent
+
+const mapStateToProps = state => {
+    return {
+        experienceTitle: state.experienceTitle,
+        experienceItems: state.experienceItems,
+        skillsTitle: state.skillsTitle,
+        skillsContent: state.skillsContent,
+        educationTitle: state.educationTitle,
+        educationContent: state.educationContent
+    };
+};
+
+export default connect(mapStateToProps)(MainContent);

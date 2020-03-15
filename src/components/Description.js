@@ -1,13 +1,20 @@
 import React from 'react';
-import Summary from "../data/Summary";
+import {connect} from "react-redux";
 
-const Description = () => {
+const Description = props => {
     return (
         <div className='section'>
             <p className='summary'>
-                {Summary}
+                {props.summary}
             </p>
         </div>
     );
 };
-export default Description;
+
+const mapStateToProps = state => {
+    return {
+        summary: state.summary
+    };
+};
+
+export default connect(mapStateToProps)(Description);

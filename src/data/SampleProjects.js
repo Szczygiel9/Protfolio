@@ -9,4 +9,3 @@ const portfolio = {
 };
 
 const projects = [simpleSample, portfolio];
-export default projects

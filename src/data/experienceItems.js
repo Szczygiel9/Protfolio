@@ -1,4 +1,4 @@
-const assecoExp = {
+const plAssecoExp = {
     dateFrom: "Maj 2018",
     dateTo: "Sierpień 2018",
     position: "Praktykant - Asseco Business Solutions",
@@ -12,7 +12,7 @@ const assecoExp = {
     ]
 };
 
-const sollersExp = {
+const plSollersExp = {
     dateFrom: "Listopad 2018",
     dateTo: "Obecnie",
     position: "Developer - Sollers Consulting",
@@ -28,6 +28,23 @@ const sollersExp = {
     ]
 };
 
-const ExperienceItems = [sollersExp, assecoExp];
+const engAssecoExp = {
+    dateFrom: "May 2018",
+    dateTo: "August 2018",
+    position: "Intern - Asseco Business Solutions",
+    descriptionPoints: [
+        "to fill..."
+    ]
+};
 
-export default ExperienceItems;
+const engSollersExp = {
+    dateFrom: "November 2018",
+    dateTo: "Current",
+    position: "Developer - Sollers Consulting",
+    descriptionPoints: [
+        "to fill.."
+    ]
+};
+
+export const plExperienceItems = [plSollersExp, plAssecoExp];
+export const engExperienceItems = [engSollersExp, engAssecoExp];

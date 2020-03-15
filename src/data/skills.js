@@ -1,4 +1,4 @@
-const Skills = [
+export const plSkills = [
     "Dobra znajomość języka Java oraz framework'a Spring",
     "Sprawne posługiwanie się systemem kontroli wersji GIT",
     "Praktyczna znajomość projektowania oraz implementacji serwisów typu REST",
@@ -9,4 +9,5 @@ const Skills = [
     "Świadome wykorzystwyanie wzorców projektowych, dobrych praktyk oraz refactoringu",
     "W trakcie nauki: Docker, AWS, JavaScript, React"];
 
-export default Skills;
+export const engSkills = ["to fill.."];
+
