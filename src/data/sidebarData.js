@@ -47,7 +47,7 @@ const engMediaData = {
 
 const engLangData = {
     title: "Language",
-    value: "to fill.."
+    value: "English at the level that allows fluent communication with team members"
 };
 
 export const plSidebarData = {

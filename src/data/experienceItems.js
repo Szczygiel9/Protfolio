@@ -33,16 +33,28 @@ const engAssecoExp = {
     dateTo: "August 2018",
     position: "Intern - Asseco Business Solutions",
     descriptionPoints: [
-        "to fill..."
+        "Creating a model dedicated to REST communication",
+        "Advanced REST services creation",
+        "Hibernate - library usage for retrieve relevant domain data",
+        "Spring - library usage for creation domain and REST services",
+        "Swagger - library configuration and usage for REST services documentation",
+        "Unit test creation with parallel processing verification"
     ]
 };
 
 const engSollersExp = {
     dateFrom: "November 2018",
-    dateTo: "Current",
+    dateTo: "Currently",
     position: "Developer - Sollers Consulting",
     descriptionPoints: [
-        "to fill.."
+        "Work in Scrum methodology",
+        "Work in international team",
+        "Active participation in code review process",
+        "Implementation of business requirements in Guidewire technology",
+        "Active participation in Agile ceremonies leaded in English",
+        "Implementation of SOAP services",
+        "Searching for solutions based on documentation",
+        "Technical documentation creation"
     ]
 };
 

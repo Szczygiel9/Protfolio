@@ -2,7 +2,7 @@ import {engTitles, plTitles} from "./titles";
 import {engEducation, plEducation} from "./educationData";
 import {engExperienceItems, plExperienceItems} from "./experienceItems";
 import {engSidebarData, plSidebarData} from "./sidebarData";
-import {engSummary, plSummary} from "./Summary";
+import {engSummary, plSummary} from "./summary";
 import {engSkills, plSkills} from "./skills";
 
 export const plData = {

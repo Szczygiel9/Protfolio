@@ -9,5 +9,15 @@ export const plSkills = [
     "Świadome wykorzystwyanie wzorców projektowych, dobrych praktyk oraz refactoringu",
     "W trakcie nauki: Docker, AWS, JavaScript, React"];
 
-export const engSkills = ["to fill.."];
+export const engSkills = [
+    "Good Java and Spring framework knowledge",
+    "Efficient use of version control system GIT",
+    "Practical knowledge of design and implementation REST services",
+    "Work with tools: IntelliJ, Jenkins, Jira",
+    "Knowledge of  object-relation mapping with Hibernate framework",
+    "Unit test creation with JUnit and Mockito libraries",
+    "SQL syntax knowledge",
+    "Conscious usage of design patterns, good practices and refactoring",
+    "Under studying: Docker, AWS, JavaScript, React",
+];
 
