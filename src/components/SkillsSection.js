@@ -7,8 +7,8 @@ const SkillsSection = ({title, content}) => {
             <div>
                 <ul className='experience-list'>
                     {
-                        content.map((item) => {
-                                return <li>{item}</li>
+                        content.map((item, index) => {
+                                return <li key={index}>{item}</li>
                             }
                         )
                     }

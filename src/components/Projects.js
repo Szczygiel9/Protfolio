@@ -18,33 +18,40 @@ const Projects = () => {
                     które wystarczy zaaplikować do swojej bazy danych.</p>
 
                 <p>Projekt został stworzony przy użyciu języka Java. Komunikacja została zapewniona poprzez REST api.
-                    Głównym endpoint'em dla użytkownika jest '/processTable', który przyjmuje w ciele zapytania strukturę
+                    Głównym endpoint'em dla użytkownika jest '/processTable', który przyjmuje w ciele zapytania
+                    strukturę
                     tabeli oraz zwraca pożądany kod SQL. Poza typem kolumny możliwe jest podanie typu instynktowego.
-                    Jest jedna z wartości predefiniowanych typów, dla których zostanie wczytana wartość ze zbioru przykładowych
+                    Jest jedna z wartości predefiniowanych typów, dla których zostanie wczytana wartość ze zbioru
+                    przykładowych
                     danych (np. Anna dla typu 'name', Microsoft dla typu 'company).
                     W celu utrwalenia przykładowych danych została wykorzystana baza danych NoSQL
                     MongoDB.</p>
 
-                <p>Biblioteki wykorzystane w tym projekcie to:
-                    <ul>
-                        <li>Spring wraz z modułami: Core, Rest, Data oraz Spring Boot</li>
-                        <li>Lombok</li>
-                        <li>Apache Commons</li>
-                        <li>Swagger</li>
-                        <li>JUnit</li>
-                        <li>Jackson</li>
-                    </ul>
-                </p>
+                <div>Biblioteki wykorzystane w tym projekcie to:
+                    <div>
+
+                        <ul>
+                            <li>Spring wraz z modułami: Core, Rest, Data oraz Spring Boot</li>
+                            <li>Lombok</li>
+                            <li>Apache Commons</li>
+                            <li>Swagger</li>
+                            <li>JUnit</li>
+                            <li>Jackson</li>
+                        </ul>
+                    </div>
+                </div>
 
                 <p>
                     Start serwera może się odbyć z profilem data-init - ładuje przykładowe dane (np. imiona, miasta)
                     do bazy, z którą komunikuje się aplikacja serwerowa. Dane do załadowania są wcześniej przygotowane
-                    w postaci plików tekstowych. Utrwalenie tych danych zostało zaimplementowane przy użyciu Spring’owych
+                    w postaci plików tekstowych. Utrwalenie tych danych zostało zaimplementowane przy użyciu
+                    Spring’owych
                     auto-repozytorów, które dostarczają podstawowe operacje CRUD.
                 </p>
 
                 <p>
-                    Gotowa aplikacja została wdrożona na platformę AWS. W celu zbudowania aplikacji oraz jej deploymentu,
+                    Gotowa aplikacja została wdrożona na platformę AWS. W celu zbudowania aplikacji oraz jej
+                    deploymentu,
                     został użyty serwis AWS CodePipeline wraz z narzędziami CodeBuild oraz CodeDeploy.
                     Każdy wypchnięty commit do repozytorium GitHub wyzwala testy a następnie budowę paczki.
                     Definicja pipeline'a została zawarta w pliku buildspec.yml. Sama aplikacja
@@ -58,8 +65,10 @@ const Projects = () => {
                     <br/>
                     <br/>
 
-                    Publiczny adres wystawionego API to: <a className='link' href="http://simple-sample.us-east-2.elasticbeanstalk.com">link</a>.
-                    Testowanie jest również możliwe dzięki narzędziu Swagger, link: <a className='link' href="http://simple-sample.us-east-2.elasticbeanstalk.com/swagger-ui.html">swagger</a>.
+                    Publiczny adres wystawionego API to: <a className='link'
+                                                            href="http://simple-sample.us-east-2.elasticbeanstalk.com">link</a>.
+                    Testowanie jest również możliwe dzięki narzędziu Swagger, link: <a className='link'
+                                                                                       href="http://simple-sample.us-east-2.elasticbeanstalk.com/swagger-ui.html">swagger</a>.
                 </p>
             </div>
 
@@ -76,14 +85,14 @@ const Projects = () => {
                     jak i wąskim ekranie. Do stworzenia nawigacji w górnej belce zostały użyte komponenty z pakietu
                     'react-router-dom'. Sama aplikacja została wdrożona na serwis GitHub Pages.
                 </p>
-                <p>
+                <div>
                     Do zrobienia:
                     <ul>
                         <li>obsługa przycisku zmiany języka</li>
                         <li>uporządkowanie styli CSS</li>
                         <li>poprawa responsywności oraz stylowaniana na urządzeniach mobilnych</li>
                     </ul>
-                </p>
+                </div>
             </div>
 
         </div>
