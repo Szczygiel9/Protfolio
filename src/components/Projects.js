@@ -50,6 +50,7 @@ const Projects = () => {
                 </p>
 
                 <p>
+                    <s>
                     Gotowa aplikacja została wdrożona na platformę AWS. W celu zbudowania aplikacji oraz jej
                     deploymentu,
                     został użyty serwis AWS CodePipeline wraz z narzędziami CodeBuild oraz CodeDeploy.
@@ -69,6 +70,7 @@ const Projects = () => {
                                                             href="http://simple-sample.us-east-2.elasticbeanstalk.com">link</a>.
                     Testowanie jest również możliwe dzięki narzędziu Swagger, link: <a className='link'
                                                                                        href="http://simple-sample.us-east-2.elasticbeanstalk.com/swagger-ui.html">swagger</a>.
+                    </s>
                 </p>
             </div>
 
